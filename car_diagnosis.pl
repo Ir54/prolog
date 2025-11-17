@@ -1,3 +1,17 @@
+% --- Dynamic declarations (can be modified at runtime) ---
+:- dynamic(turn_over/0).
+:- dynamic(lights_weak/0).
+:- dynamic(radio_weak/0).
+:- dynamic(smell_gas/0).
+:- dynamic(gas_gauge/1).
+
+% --- Facts about the car's condition ---
+turn_over.
+lights_weak.
+radio_weak.
+smell_gas.
+gas_gauge(low).
+
 % --- Rules for detecting problems ---
 
 problem(battery) :-
